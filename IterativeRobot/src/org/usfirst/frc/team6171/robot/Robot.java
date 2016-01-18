@@ -3,6 +3,7 @@ package org.usfirst.frc.team6171.robot;
 
 import edu.wpi.first.wpilibj.IterativeRobot;
 import edu.wpi.first.wpilibj.Timer;
+import edu.wpi.first.wpilibj.VictorSP;
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
@@ -18,7 +19,7 @@ public class Robot extends IterativeRobot {
     final String customAuto = "My Auto";
     String autoSelected;
     SendableChooser chooser;
-	
+	VictorSP leftFront, leftRear, rightFront, rightRear;
     /**
      * This function is run when the robot is first started up and should be
      * used for any initialization code.
