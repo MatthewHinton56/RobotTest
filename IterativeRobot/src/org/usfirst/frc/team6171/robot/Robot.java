@@ -29,6 +29,10 @@ public class Robot extends IterativeRobot {
         chooser.addDefault("Default Auto", defaultAuto);
         chooser.addObject("My Auto", customAuto);
         SmartDashboard.putData("Auto choices", chooser);
+        leftFront = new VictorSP(0);
+        leftRear = new VictorSP(1);
+        rightRear = new VictorSP(3);
+        rightFront = new VictorSP(2);
     }
     
 	/**
